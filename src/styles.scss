@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  font-family: Sans-Serif;
+//   padding: 30px;
+  background-color: #f6f6f6;
+}
+
+
+.show{
+  display: block !important;
+}
+
+.hide{
+  display: none !important;
+}

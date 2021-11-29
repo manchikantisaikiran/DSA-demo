@@ -1,0 +1,20 @@
+<nav>
+    <div class="item">
+        DSA
+    </div>
+    <div style="display: flex; align-items: center;gap: 15px; cursor: pointer;">
+        <div class="eye" (click)="toggleEye()">
+            <i [ngClass]="{'hide':displayTable}" class="bi bi-eye-fill"></i>
+            <i [ngClass]="{'hide':!displayTable}" class="bi bi-eye-slash-fill"></i>
+        </div>
+        <div class="item">
+            <div class="select">
+                <select>
+                    <option value="" disabled>choose a Data Structure</option>
+                    <option value="1">Array</option>
+                    <option value="2">Linked List</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</nav>

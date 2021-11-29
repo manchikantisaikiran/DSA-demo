@@ -1,0 +1,9 @@
+.cols{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,115px);
+    .item{
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 1px;
+    }   
+}

@@ -1,0 +1,21 @@
+<h1>linear-search works!</h1>
+
+<input type="text" name="search" id="search" #input>
+<button (click)="linearSearch(input.value)" >Search</button>
+
+<ng-container>
+    <p>{{Timer}}</p>
+</ng-container>
+
+<ng-container *ngIf="loader">
+    <p>Searching....</p>
+</ng-container>
+
+<ng-container *ngIf="elementFound !== null">
+    <ng-container *ngIf="elementFound" >
+        <p>Found!</p>
+    </ng-container>
+    <ng-container *ngIf="!elementFound" >
+        <p>Not Found!</p>
+    </ng-container>
+</ng-container>
